@@ -1,5 +1,6 @@
 #! /bin/bash
 
+
 REFERENCE="/home/dev_quyet/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta"
 REFERENCE_RTG=/home/dev_quyet/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.sdf
 READ1=/home/dev_quyet/HG004_analysis/SRR2962694_1.fastq.gz
