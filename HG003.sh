@@ -1,4 +1,5 @@
 #! /bin/bash
+
 #>>>>>Variables<<<<<<
 REFERENCE="/home/dev_quyet/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta"
 REFERENCE_RTG=/home/dev_quyet/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.sdf
