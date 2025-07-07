@@ -1,5 +1,6 @@
 #! /bin/bash
 
+
 wget -P /home/dev_quyet/GRCh38 https://ftp.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz
 
 wget -P /home/dev_quyet/GRCh38 https://support.illumina.com/content/dam/illumina-support/documents/downloads/productfiles/illumina-prep/exome/hg38_Twist_Bioscience_for_Illumina_Exome_2.5.bed
