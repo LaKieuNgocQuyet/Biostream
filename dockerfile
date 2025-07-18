@@ -18,9 +18,10 @@ RUN apt-get install -y \
     bwa \
     samtools \
     bcftools
-RUN wget -P /home/Variant_caller https://github.com/broadinstitute/gatk/releases/download/4.6.2.0/gatk-4.6.2.0.zip && \
-    unzip /home/Variant_caller/gatk-4.6.2.0.zip && \
+
+RUN wget -P /home/Biostream https://github.com/broadinstitute/gatk/releases/download/4.6.2.0/gatk-4.6.2.0.zip && \
+    unzip /home/Biostream/gatk-4.6.2.0.zip && \
     rm /home/Variant_caller/gatk-4.6.2.0.zip 
 RUN python3 -m venv /home/Variant_caller/Myvenv
-ENV PATH="/home/Variant_caller/gatk-4.6.2.0:$PATH"
-ENV PATH="/home/Variant_caller/Myvenv/bin:$PATH"
+ENV PATH="/home/Biostream/gatk-4.6.2.0:$PATH"
+ENV PATH="/home/Biostream/Myvenv/bin:$PATH"
