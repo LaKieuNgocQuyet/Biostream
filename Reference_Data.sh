@@ -14,7 +14,10 @@ wget -P ./hg19 https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisS
 mkdir -p ./Benchmark
 wget -P ./Benchmark https://ftp.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
 wget -P ./Benchmark https://ftp.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi
-#Known-sites_hg38
+
+#==================================================================================================
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Known_sites_hg38 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#==================================================================================================
 mkdir -p ./Known-sites_hg38
 wget -P ./Known-sites_hg38 https://storage.googleapis.com/genomics-public-data/resources/broad/hg38/v0/1000G_omni2.5.hg38.vcf.gz
 wget -P ./Known-sites_hg38 https://storage.googleapis.com/genomics-public-data/resources/broad/hg38/v0/1000G_omni2.5.hg38.vcf.gz.tbi
@@ -30,7 +33,10 @@ wget -P ./Known-sites_hg38 https://storage.googleapis.com/genomics-public-data/r
 
 wget -P ./Known-sites_hg38 https://storage.googleapis.com/genomics-public-data/resources/broad/hg38/v0/hapmap_3.3.hg38.vcf.gz
 wget -P ./Known-sites_hg38 https://storage.googleapis.com/genomics-public-data/resources/broad/hg38/v0/hapmap_3.3.hg38.vcf.gz.tbi
-#Known-sites_hg19
+
+#==================================================================================================
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Known_sites_hg19 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#==================================================================================================
 mkdir -p ./Known-sites_hg19
 wget -P ./Known-sites_hg19 http://ftp.cbi.pku.edu.cn/pub/mirror/GATK/hg19/1000G_phase1.indels.hg19.sites.vcf.gz
 wget -P ./Known-sites_hg19 http://ftp.cbi.pku.edu.cn/pub/mirror/GATK/hg19/1000G_phase1.indels.hg19.sites.vcf.idx.gz
