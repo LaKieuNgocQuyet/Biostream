@@ -86,7 +86,14 @@ body {
 			flex: 1;
 		}
 
-
+		#input {
+			background-color: rgb(50, 130, 255);
+			padding: 4px;
+			border: none;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			flex: 1;	
+		}
 .body-content {
 	flex: 1;
 	background-color: rgb(243, 243, 243);
