@@ -1,0 +1,129 @@
+html, body {
+height: 100%;
+margin: 0;
+min-width: 1000px;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+font-family: sans-serif;
+background-color: white;
+}
+
+
+.header-container {
+	background-color: 	rgb(0, 81, 255);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 5px 0px;
+	font-family: sans-serif;
+}
+
+		#logo {
+			color: rgb(255, 255, 255);
+			font-size: 16px;
+			padding: 4px;
+			padding-left: 12px;
+			width: 80px;
+			flex: 0 0 auto;
+			font-weight: bold;
+			font-family: Courier, monospace;
+		}
+
+		.divider {
+			width: 1px;
+			height: 80%;
+			background-color: rgb(255, 255, 255);
+			margin: 0px 0px;
+		}
+
+		.toolbar-1 {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			margin-right:auto;
+		}
+
+				.toolbar-button {
+					background-color: transparent;
+					color: rgb(255, 255, 255);
+					border: none;
+					border-radius: 6px;
+					padding: 4px 8px;
+					font-family: sans-serif;
+					font-size: 13px;
+					cursor: pointer;
+					font-weight: 600;
+					transition: background-color 0.2s, color 0.2s;
+				}
+
+				.toolbar-button:hover {
+					background-color: rgb(0, 60, 200);
+				}
+		.toolbar-search{
+			display: flex;
+			color: rgb(255, 255, 255);
+			gap: 0px;
+			padding: 0px 0px;
+			border-radius: 6px;
+			border: 1px solid rgb(255, 255, 255);
+			align-items: center;
+			width: 300px;
+			height: 100%;
+			transition: border-color 0.3s ease, box-shadow 0.3s ease;
+		}
+		.toolbar-search:focus-within {
+			border-color: #007bff;
+			box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+		}
+				.toolbar-search div {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: rgb(0, 81, 255);
+					border-radius: 6px;
+					cursor: pointer;
+					padding-left: 6px;
+					transition: background-color 0.2s;
+				}
+				
+				.input {
+					margin: 0;
+					color: white;
+					background-color: rgb(0, 81, 255);
+					padding: 0px;
+					border: none;
+					border-top-right-radius: 6px;
+					border-bottom-right-radius: 6px;
+					box-sizing: border-box;
+					flex: 1;
+					height: 100%;
+					transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out	
+				}
+		.toolbar-2 {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+			gap: 6px;
+		}
+.body-content {
+flex: 1;
+background-color: rgb(243, 243, 243);
+
+float: left;
+width: 102px;
+}
+
+
+
+.footer {
+background-color: rgb(243, 243, 243);
+color: #555555;
+text-align: center;
+padding: 5px;
+font-family: sans-serif;
+font-size: 13px;
+}
