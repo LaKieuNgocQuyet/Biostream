@@ -1,21 +1,35 @@
+const { app, BrowserWindow } = require('electron/main')
+const path = require('node:path')
 
+function createWindow () {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    frame: true,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      contextIsolation: true,
+      nodeIntegration: false,
+      sandbox: false  
+    }
+  })
+  win.setMenu(null)
+  win.loadFile('index.html')
+  win.webContents.openDevTools()
+}
 
-const openPanel = document.getElementById('openPanel');
-const closePanel = document.getElementById('closePanel');
-const sidePanel = document.getElementById('sidePanel');
-const overlay = document.getElementById('overlay');
+app.whenReady().then(() => {
+  createWindow()
 
-openPanel.addEventListener('click', () => {
-  sidePanel.classList.add('show');
-  overlay.classList.remove('hidden');
-});
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createWindow()
+    }
+  })
+})
 
-closePanel.addEventListener('click', () => {
-  sidePanel.classList.remove('show');
-  overlay.classList.add('hidden');
-});
-
-overlay.addEventListener('click', () => {
-  sidePanel.classList.remove('show');
-  overlay.classList.add('hidden');
-});
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit()
+  }
+})
