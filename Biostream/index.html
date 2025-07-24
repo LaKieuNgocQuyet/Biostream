@@ -3,15 +3,15 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Biostream</title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
+	<link rel="stylesheet" href=".\renderer\style.css" />
+	<link rel="stylesheet" href=".\node_modules\bootstrap-icons/font/bootstrap-icons.css"/>
 </head>
 <body>
 <!--========================================Header========================================-->
 <!----><header class="header-container">
 <!---->		<!------------------------------------------------------------------------------>												 
 <!---->		<div id="logo">
-<!---->			Biostream
+<!---->			Biostreams
 <!---->		</div>
 <!---->		<!------------------------------------------------------------------------------>
 <!---->		<div class="divider"></div>
@@ -79,16 +79,54 @@
 
 
 <!--========================================Content========================================-->
-<!----><div class="body-content">
-<!---->
+<!----><div class="content-container">
+<!---->		<!------------------------------------------------------------------------------->
+<!---->		<div class="content-1">
+<!---->			<div class="sidebar">
+<!---->  			<button class="toggle-btn">
+						<i class="bi bi-chevron-double-left"></i>
+<!---->				</button>
+<!---->			</div>
+<!---->		</div>
+<!---->		<!------------------------------------------------------------------------------->
+<!---->		<div class="content-2">
+<!---->			<!--------------------------------------------------------------------------->
+<!---->			<div class="content-2_2">
+<!---->				<!----------------------------------------------------------------------->
+<!---->				<div class="process-monitoring">
+<!---->					<!------------------------------------------------------------------->	
+<!---->					<div class="cpu-usage">
+<!---->						<i class="bi bi-cpu"></i>
+<!---->						CPU Usage: <span class="cpu-content">0%</span>
+<!---->					</div>
+<!---->					<!------------------------------------------------------------------->						
+<!---->					<div class="memory-usage">
+<!---->						<i class="bi bi-memory"></i>
+<!---->						Memory Usage: <span class="memory-content">0%</span>
+<!---->					</div>
+<!---->					<!------------------------------------------------------------------->
+<!---->					<div class="disk-info">
+<!---->						<i class="bi bi-device-ssd"></i>
+<!---->						<span>
+<!---->							Disk: -- GB used (limit -- GB)
+<!---->						</span>
+<!---->					</div>
+<!---->					<!------------------------------------------------------------------->					
+<!---->				</div>
+<!---->				<div class="terminal">
+<!---->					<button class="terminal-button">
+<!---->						<i class="bi bi-terminal"></i>
+<!---->						<div>Terminal</div>
+<!---->					</button>
+<!---->				</div>
+<!---->			</div>
+<!---->		</div>
 <!----></div>
-<!---->
 <!--========================================Content========================================-->
-
+ <script src=".\renderer\monitoring.js"></script>
 
 <!--========================================Footer========================================-->
 <!----><footer class="footer">
-<!---->&copy; 2023 Biostream. All rights reserved.
 <!----></footer>
 <!--========================================Footer========================================-->
 </body>
