@@ -1,0 +1,132 @@
+.workspace-container {
+    background-color: white;
+    height: 100%;
+    grid-area: right;
+    display: grid;
+    grid-template-rows: 1fr 30px;
+    grid-template-areas:
+    "top"
+    "bottom";
+}
+.workspace{
+    grid-area: top; 
+    display: grid;
+    grid-template-rows: 37px 1fr;
+    grid-template-areas:
+    "top"
+    "bottom";
+}
+        .tab-bar {
+            gap: 2px;
+            display: flex;
+            background: rgb(243, 243, 243);
+            color: rgb(85, 85, 85);
+            border-bottom: 2px solid rgb(220, 220, 220);
+            height: 35px;
+            align-items: flex-end;
+            padding-left: 5px;
+            grid-area: top;
+        }
+
+                .tab {
+                    background: rgb(243, 243, 243);
+                    padding: 5px 10px;
+                    margin-right: 0px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    border: 1px solid rgb(220, 220, 220);
+                    border-bottom: none;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+                }
+
+                .tab.active {
+                background: rgb(255, 255, 255);
+                margin-bottom: -2px;
+                }
+
+                .close-btn {
+                margin-left: 5px;
+                color: red;
+                cursor: pointer;
+                }
+
+        .tab-content {
+        background: rgb(255, 255, 255);
+        color: rgb(49, 47, 47);
+        height: 100%;
+        grid-area: bottom;
+        overflow-y: auto;
+        }
+                .tab-pane {
+                height: 100%;    
+                overflow-y: auto;
+                display: none;
+                }
+
+                .tab-pane.active {
+                display: block;
+                }
+/*===================================================================================================*/
+        .monitoring_space {
+            display: flex;
+            border: solid;
+            border-color: rgb(255, 255, 255);
+            border-width: 1px 1px 1px 1px;
+            color: #555555;
+            font-size: 12px;
+            padding: 10px;
+            background-color: rgb(243, 243, 243);
+            grid-area: bottom;
+        }
+
+                .process-monitoring{
+                    margin-right: auto;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    align-items: center;
+                }
+                        .cpu-usage, .memory-usage {
+                            width: 140px;
+                            display: inline-block;
+                        }
+
+                .terminal{
+                    border: none;
+                    margin-left: auto;
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                    align-items: center;
+                }
+                        .terminal-button{
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            background-color: transparent;
+                            color: #555555;
+                            border: none;
+                            padding: 5px 5px;
+                            border-radius: 6px;
+                            font-family: sans-serif;
+                            font-size: 13px;
+                            cursor: pointer;
+                            transition: background-color 0.2s, color 0.2s;
+                        }
+                        .terminal-button:hover {
+                            background-color: rgb(230, 229, 229);
+                        }
+/*===================================================================================================*/
+
+.footer {
+background-color: rgb(0, 81, 255);
+color: #555555;
+text-align: center;
+padding: 5px;
+font-family: sans-serif;
+font-size: 13px;
+}
+
+
+
