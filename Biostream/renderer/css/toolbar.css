@@ -1,0 +1,142 @@
+/*general*/
+/*display*/
+/*margin*/
+/*border*/
+/*padding*/
+/*transition*/
+
+.header-container {
+    /*general*/
+    background-color: 	rgb(0, 81, 255);
+    font-family: sans-serif;
+    /*display*/
+    display: flex;
+	align-items: center;
+    gap: 10px;
+    /*margin*/
+    /*border*/
+    /*padding*/
+    padding: 5px 0px;
+    /*transition*/
+}
+		#logo {
+            /*general*/
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: bold;
+			font-family: Courier, monospace;
+            flex: 0 0 auto;
+            /*display*/
+            /*margin*/
+            /*border*/
+            /*padding*/
+			padding: 4px;
+			padding-left: 12px;            
+            /*transition*/
+		}
+
+		.divider {
+			width: 1px;
+			height: 80%;
+			background-color: rgb(255, 255, 255);
+			margin: 0px 0px;
+		}
+
+		.toolbar-1 {
+            /*general*/
+            /*display*/
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            /*margin*/
+            margin-right: auto;
+            /*border*/
+            /*padding*/
+            /*transition*/
+		}
+				.toolbar-button {
+                    /*general*/
+                    background-color: transparent;
+                    color: rgb(255, 255, 255);
+					font-family: sans-serif;
+					font-size: 13px;
+                    font-weight: 600;                    
+                    /*display*/
+                    /*margin*/
+                    /*border*/
+					border: none;
+					border-radius: 6px;                    
+                    /*padding*/
+					padding: 4px 8px;                    
+                    /*transition*/
+					cursor: pointer;
+					transition: background-color 0.2s, color 0.2s;
+				}
+				.toolbar-button:hover {
+					background-color: rgb(0, 60, 200);
+				}
+
+                .toolbar-search{
+                    /*general*/
+                    color: rgb(255, 255, 255);
+                    width: 300px;
+                    height: 100%;
+                    /*display*/
+                    display: flex;
+                    align-items: center;
+                    gap: 0px;
+                    /*margin*/
+                    /*border*/
+                    border-radius: 6px;
+                    border: 1px solid rgb(255, 255, 255);                    
+                    /*padding*/
+                    padding: 0px 0px;
+                    /*transition*/
+                    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+                }
+                .toolbar-search:focus-within {
+                    border-color: #007bff;
+                    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+                }
+                        .toolbar-search div {
+                            /*general*/
+                            background-color: rgb(0, 81, 255);
+                            /*display*/
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;                                                        
+                            /*margin*/
+                            /*border*/
+                            border-radius: 6px;
+                            /*padding*/
+                            padding-left: 6px;
+                            /*transition*/                            
+                            cursor: pointer;
+                            transition: background-color 0.2s;
+                        }
+                        
+                        .input {
+                            /*general*/
+                            color: white;
+                            background-color: rgb(0, 81, 255);
+                            box-sizing: border-box;
+                            height: 100%;
+                            /*display*/
+                            flex: 1;
+                            /*margin*/
+                            margin: 0;
+                            /*border*/
+                            border: none;
+                            border-top-right-radius: 6px;
+                            border-bottom-right-radius: 6px;
+                            /*padding*/
+                            padding: 0px;
+                            /*transition*/    
+                            transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out	
+                        }
+		.toolbar-2 {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+			gap: 6px;
+		}
