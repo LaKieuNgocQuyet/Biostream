@@ -12,7 +12,7 @@
 </head>
 <body>
 <!--========================================Header========================================-->
-<!----><header class="header-container">
+<!----><header class="toolbar_container">
 <!---->		<!------------------------------------------------------------------------------>												 
 <!---->		<div id="logo">
 <!---->			Biostream
@@ -84,28 +84,39 @@
 
 <!--========================================Content========================================-->
 <!----><div class="content-container">
-<!---->		<!------------------------------------------------------------------------------->
+<!---->		<!--========================================Sidebar========================================-->
 <!---->		<div class="sidebar">
-				<button id="analysis-button">
-					<i class="bi bi-pie-chart"></i>
-					<span>Analysis</span>
-				</button>
-<!---->			<!--------------------------------------------------------------------------->
-				<button id="visualization-button">
-					<i class="bi bi-bar-chart-line"></i>
-					<span>Visualization</span>
-				</button>
-<!---->			<!--------------------------------------------------------------------------->
-				<div class="sidebar-devider">
+				<div class="sidebar_level-1">
+					<div class="sidebar_level-1_devider"></div>
+					<button id="analysis-button">
+						<i class="bi bi-pie-chart"></i>
+						<span>
+							Analysis
+							<i class="bi bi-chevron-compact-right"></i>
+						</span>
+					</button>
+<!---->				<!--------------------------------------------------------------------------->
+					<button id="visualization-button">
+						<i class="bi bi-bar-chart-line"></i>
+						<span>Visualization</span>
+					</button>
+<!---->				<!--------------------------------------------------------------------------->
+					<div class="sidebar_level-1_devider">
+					</div>
 				</div>
+				
+				<div class="sidebar_level-2" >
+					<div class="analysis-panel">
+						<button>
+							<i class="ri-dna-line"></i>
+							<span>Variant Calling</span>
+						</button>
+					</div>
+				</div>	
 			</div>
+<!---->		<!--========================================Sidebar========================================-->
 <!---->		<!------------------------------------------------------------------------------->
-			<div class="analysis-panel" >
-				<button>
-					<i class="ri-dna-line"></i>
-					<span>Variant Calling</span>
-				</button>
-			</div>	
+
 <!---->		<!------------------------------------------------------------------------------->
 			
 <!---->		<!------------------------------------------------------------------------------->	
@@ -121,7 +132,7 @@
     						<i class="bi bi-house"></i>
   						</div>
 					</div>
-					<div class="tab-content">
+					<div class="tab_content">
 
 					</div>
 <!---->	
@@ -161,7 +172,7 @@
 <!--========================================Content========================================-->
  <script src=".\renderer\function\monitoring.js"></script>
  <script src=".\renderer\function\workspace.js"></script>
- <script src=".\renderer\function\sidebar-button.js"></script>
+ <script src=".\renderer\function\sidebar.js"></script>
 
 <!--========================================Footer========================================-->
 <!----><footer class="footer">
